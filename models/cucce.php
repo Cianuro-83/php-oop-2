@@ -7,11 +7,12 @@ class Cucce extends Prodotti{
     protected int $profondita;
     
     
-    function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, $larghezza, $profondita, $_altezza){
-        parent::__construct($_nome, $prezzo, $_descrizione $_pezzi_disponibili);
+    function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, $larghezza, $profondita, $_altezza) {
+        parent::__construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili);
         $this->altezza=$_altezza;
         $this->larghezza=$_larghezza;
         $this->profondita=$_profondita;
+       
     }
     
 //  **************************

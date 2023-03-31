@@ -4,8 +4,8 @@ Class Categoria {
     protected string $img="";
 
     function __construct($_animale, $img){
-        if ($_animale=== "gatto"){
-            $this->categoria=$_categoria;
+        if ($_animale == "gatto"){
+            $this->animale=$_animale;
         }
     }
       public function getanimale() {

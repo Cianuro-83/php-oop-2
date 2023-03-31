@@ -20,9 +20,10 @@ class Prodotti{
       
     public function getnome() {
         return $this->nome;
+    }
 
         public function getprezzo() {
-            return $this->pezzo;
+            return $this->prezzo;
           }
 
           public function getdescrizione() {
@@ -40,4 +41,3 @@ class Prodotti{
 }
 
 ?>
-

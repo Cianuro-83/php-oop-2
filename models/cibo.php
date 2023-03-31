@@ -7,7 +7,7 @@ class Cibo extends Prodotti{
     
     
     function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, $ingredienti, $indicazioni, $_provenienza){
-        parent::__construct($_nome, $prezzo, $_descrizione $_pezzi_disponibili);
+        parent::__construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili);
         $this->provenienza=$_provenienza;
         $this->ingredienti=$_ingredienti;
         $this->indicazioni=$_indicazioni;
