@@ -18,52 +18,52 @@ class Varie extends Prodotti{
     }
     // nome
     public function setnome($newValue) {
-        $this->nome=$_nome;
+        $this->nome=$newValue;
       }
     
-    public function getnome($newValue) {
+    public function getnome() {
         return $this->nome;
       }
 
     //   pezzi_disponibili
     public function setpezzi_disponibili($newValue) {
-        $this->pezzi_disponibili=$_pezzi_disponibili;
+        $this->pezzi_disponibili=$newValue;
       }
     
-    public function getpezzi_disponibili($newValue) {
+    public function getpezzi_disponibili() {
         return $this->pezzi_disponibili;
       }
     // prezzo
     public function setprezzo($newValue) {
-        $this->prezzo=$_prezzo;
+        $this->prezzo=$newValue;
       }
     
-    public function getprezzo($newValue) {
+    public function getprezzo() {
         return $this->pezzo;
       }
 
     // descrizione
     public function setdescrizione($newValue) {
-        $this->descrizione=$_descrizione;
+        $this->descrizione=$newValue;
       }
     
-    public function getdescrizione($newValue) {
+    public function getdescrizione() {
         return $this->descrizione;
       }
     // valutazione
     public function setvalutazione($newValue) {
-        $this->valutazione=$_valutazione;
+        $this->valutazione=$newValue;
       }
     
-    public function getvalutazione($newValue) {
+    public function getvalutazione() {
         return $this->valutazione;
       }
     // uso
     public function setvalutazione($newValue) {
-        $this->valutazione=$_valutazione;
+        $this->valutazione=$newValue;
       }
     
-    public function getvalutazione($newValue) {
+    public function getvalutazione() {
         return $this->valutazione;
       }
 
