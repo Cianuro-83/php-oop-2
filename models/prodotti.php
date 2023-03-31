@@ -6,7 +6,7 @@ class Prodotti{
     protected string $nome;
     protected int $prezzo;
     protected string $descrizione;
-    protected string $pezzi_disponibili;
+    protected int $pezzi_disponibili;
     protected Categoria  $categoria;
     
 

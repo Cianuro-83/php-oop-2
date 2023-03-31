@@ -1,9 +1,9 @@
 <?php 
 require_once __DIR__ . "/Prodotti.php";
 class Cibo extends Prodotti{
-    protected int $provenienza;
-    protected int $ingredienti;
-    protected int $indicazioni;
+    protected string $provenienza;
+    protected string $ingredienti;
+    protected string $indicazioni;
     
     
     function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, $ingredienti, $indicazioni, $_provenienza){
