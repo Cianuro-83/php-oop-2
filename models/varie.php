@@ -7,11 +7,11 @@ class Varie extends Prodotti{
     protected string $uso;
     
     
-    function __construct($_categoria, $_nome, $_prezzo, $_pezzi_disponibili){
-        parent::__construct($_categoria);
-        $this->nome=$_nome;
-        $this->categoria=$_categoria;
+    function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, $valutazione, $uso){
+        parent::__construct($_nome, $prezzo, $_descrizione);
         $this->pezzi_disponibili=$_pezzi_disponibili;
+        $this->valutazione=$_valutazione;
+        $this->uso=$_uso;
     }
     
 //  **************************
