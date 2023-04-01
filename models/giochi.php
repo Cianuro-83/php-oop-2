@@ -1,5 +1,6 @@
 <?php 
 require_once __DIR__ . "/Prodotti.php";
+require_once __DIR__ ."/Categoria.php";
 
 class Giochi extends Prodotti{
 
@@ -8,8 +9,8 @@ class Giochi extends Prodotti{
     protected string $uso;
     
     
-    function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, $valutazione, $uso, $_materiale){
-        parent::__construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili);
+    function __construct($_nome, $_prezzo, $_descrizione, $_pezzi_disponibili, $_valutazione, $_uso, $_materiale, Categoria $_categoria){
+        parent::__construct($_nome, $_prezzo, $_descrizione, $_pezzi_disponibili, $_categoria);
         $this->materiale=$_materiale;
         $this->valutazione=$_valutazione;
         $this->uso=$_uso;

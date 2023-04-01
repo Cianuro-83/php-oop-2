@@ -7,10 +7,10 @@ class Prodotti{
     protected int $prezzo;
     protected string $descrizione;
     protected int $pezzi_disponibili;
-    protected Categoria  $categoria;
+    protected Categoria $categoria;
     
 
-    function __construct($_nome, $prezzo, $_descrizione, $_pezzi_disponibili, Categoria $_categoria){
+    function __construct($_nome, $_prezzo, $_descrizione, $_pezzi_disponibili, Categoria $_categoria){
         $this->nome=$_nome;
         $this->prezzo=$_prezzo;
         $this->descrizione=$_descrizione;
