@@ -8,9 +8,9 @@ require_once __DIR__ ."/../Varie.php";
 // CREO LIISTANZA DEL GATTO, E DI DEFAULT MI RITROVO QUELLA DEL CANE CHE BASTA SOLO INDICARE NELLE ISTANZE DOVE INSERIRLO
 
 $gatto=new Categoria("gatto");
-var_dump($gatto);
+
 $cane=new Categoria("cane");
-var_dump($cane);
+
 
 // CREO LE ISTANZE DI CIBO (STRING-INTER-STRING-INTER------STRING-INTER-STRING-STRING-STRING------$ANIMALE)
 $cibo1= new Cibo("Edgar Cooper", 9, "Carne fresca di pollo allevato a terra", 150, "Pollo, mango e mirtilli", "Questa ricetta senza cereali contiene tanta carne fresca di pollo allevato a terra ed è un’eccellente fonte ipocalorica di proteine di alta qualità. Non utilizziamo carne essiccata o disidratata", "E.U.", $cane);
@@ -80,5 +80,5 @@ $varie[]=$varie2;
 $varie[]=$varie3;
 $varie[]=$varie4;
 $varie[]=$varie5;
-var_dump($varie);
+// var_dump($varie);
 ?>
