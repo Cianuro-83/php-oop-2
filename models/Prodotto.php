@@ -3,7 +3,7 @@ require_once __DIR__ . "/Categoria.php";
 require_once __DIR__ . "/Controllo.php";
 
 
-class Prodotti{
+class Prodotto{
   use Controllo;
   
     protected string $nome;
@@ -14,11 +14,11 @@ class Prodotti{
     
 
     function __construct($_nome, $_prezzo, $_descrizione, $_pezzi_disponibili, Categoria $_categoria){
-        $this->nome=$_nome;
-        $this->prezzo=$_prezzo;
-        $this->descrizione=$_descrizione;
-        $this->pezzi_disponibili=$_pezzi_disponibili;
-        $this->categoria=$_categoria;
+        $this->set_nome($_nome);
+        $this->set_prezzo($_prezzo);
+        $this->set_descrizione($_descrizione);
+        $this->set_pezzi_disponibili($_pezzi_disponibili);
+        $this->categoria = $_categoria;
     }
   
         
@@ -36,12 +36,29 @@ class Prodotti{
       return $this->categoria;
   }
 
+  public function set_prezzo($new_value) {
+    $this->controlla_prezzo($new_value);
+    $this->prezzo=$new_value;
+
+}
+
         public function get_prezzo() {
             return $this->prezzo;
           }
 
+          public function set_descrizione($new_value) {
+            $this->controlla_testo($new_value);
+            $this->descrizione=$new_value;
+          }
+      
+         
           public function get_descrizione() {
             return $this->descrizione;
+          }
+
+          public function set_pezzi_disponibili($new_value) {
+            $this->controlla_pezzi($new_value);
+            $this->pezzi_disponibili=$new_value;
           }
 
           public function get_pezzi_disponibili() {

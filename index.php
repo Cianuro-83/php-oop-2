@@ -34,10 +34,11 @@ require_once __DIR__ . "/models/db/db.php";
 
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="<?php echo $value->get_categoria()->get_img()?>" class="card-img-top" alt="...">
+                <img src="<?php echo $value->get_categoria()->get_img() ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
-                        </span><?php echo $value->get_nome() ?></p>
+                        </span><?php echo $value->get_nome()?></p>
+
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">prezzo:
                         </span><?php echo $value->get_prezzo() ?><span class="fw-bolder text-uppercase text-success">
                             €</span>

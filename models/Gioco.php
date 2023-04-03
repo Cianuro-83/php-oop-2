@@ -1,8 +1,10 @@
 <?php 
 require_once __DIR__ . "/Prodotto.php";
 require_once __DIR__ ."/Categoria.php";
+require_once __DIR__ . "/Controllo.php";
 
-class Giochi extends Prodotti{
+class Giochi extends Prodotto{
+  use Controllo;
 
     protected string $materiale;
     protected int $valutazione;
@@ -11,9 +13,9 @@ class Giochi extends Prodotti{
     
     function __construct($_nome, $_prezzo, $_descrizione, $_pezzi_disponibili, $_valutazione, $_uso, $_materiale, Categoria $_categoria){
         parent::__construct($_nome, $_prezzo, $_descrizione, $_pezzi_disponibili, $_categoria);
-        $this->materiale=$_materiale;
-        $this->valutazione=$_valutazione;
-        $this->uso=$_uso;
+        $this->set_materiale($_materiale);
+        $this->set_valutazione($_valutazione);
+        $this->set_uso($_uso);
     }
     
 //  **************************
@@ -22,8 +24,9 @@ class Giochi extends Prodotti{
 
 
     //   materiale
-    public function set_materiale($newValue) {
-        $this->materiale=$newValue;
+    public function set_materiale($new_Value) {
+      $this->controlla_testo($new_Value);
+        $this->materiale=$new_Value;
       }
     
     public function get_materiale() {
@@ -31,16 +34,18 @@ class Giochi extends Prodotti{
       }
 
     // valutazione
-    public function set_valutazione($newValue) {
-        $this->valutazione=$newValue;
+    public function set_valutazione($new_Value) {
+      $this->controlla_gradimento($new_Value);
+        $this->valutazione=$new_Value;
       }
     
     public function get_valutazione() {
         return $this->valutazione;
       }
     // uso
-    public function set_uso($newValue) {
-        $this->uso=$newValue;
+    public function set_uso($new_Value) {
+      $this->controlla_testo($new_Value);
+        $this->uso=$new_Value;
       }
     
     public function get_uso() {

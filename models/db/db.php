@@ -14,7 +14,7 @@ $cane=new Categoria("cane");
 
 
 // CREO LE ISTANZE DI CIBO (STRING-INTER-STRING-INTER------STRING-INTER-STRING-STRING-STRING------$ANIMALE)
-$cibo1= new Cibo("Edgar Cooper", 9.15, "Carne fresca di pollo allevato a terra", 150, "Pollo, mango e mirtilli", "Questa ricetta senza cereali contiene tanta carne fresca di pollo allevato a terra ed è un’eccellente fonte ipocalorica di proteine di alta qualità. Non utilizziamo carne essiccata o disidratata", "E.U.", $cane);
+$cibo1= new Cibo("Egar Cooper", 9.55, "Carne fresca di pollo allevato a terra", 150, "Pollo, mango e mirtilli", "Questa ricetta senza cereali contiene tanta carne fresca di pollo allevato a terra ed è un’eccellente fonte ipocalorica di proteine di alta qualità. Non utilizziamo carne essiccata o disidratata", "E.U.", $cane);
 // var_dump($cibo1);
 $cibo2= new Cibo("Edgar Cooper", 43, "Le nostre crocchette al pollo allevato all’aperto sono complete e senza schifezze, perfette per tutti i gatti adulti, anche sterilizzati. Preparate solo con tanta carne fresca, che non è stata ridotta in polvere, stracotta o sfilacciata e con una selezione di ingredienti tra i più gustosi", 300, "Pollo", "Passa al cibo senza schifezze aumentando gradualmente il prodotto Edgard & Cooper e diminuendo proporzionalmente quello precedente nell’arco di 10 giorni.", "E.U.", $gatto);
 // var_dump($cibo2);
