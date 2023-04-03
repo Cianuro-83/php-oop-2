@@ -31,10 +31,10 @@ require_once __DIR__ . "/models/db/db.php";
 
             <?php 
         foreach ($cibo as $value):
-            // foreach($Categoria as $val):
+
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="./img/cane.png" class="card-img-top" alt="...">
+                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
                         </span><?php echo $value->getnome() ?></p>
@@ -56,7 +56,6 @@ require_once __DIR__ . "/models/db/db.php";
             </div>
             <?php
     endforeach;
-// endforeach;
     ?>
         </div>
         <!-- CUCCE -->
@@ -64,10 +63,9 @@ require_once __DIR__ . "/models/db/db.php";
         <div class=" d-flex flex-wrap  justify-content-start">
             <?php 
         foreach ($cucce as $value):
-            // foreach($Categoria as $val):
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="./img/gatto.png" class="card-img-top" alt="...">
+                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
                         </span><?php echo $value->getnome() ?></p>
@@ -89,7 +87,6 @@ require_once __DIR__ . "/models/db/db.php";
             </div>
             <?php
     endforeach;
-// endforeach;
     ?>
         </div>
 
@@ -98,10 +95,9 @@ require_once __DIR__ . "/models/db/db.php";
         <div class=" d-flex flex-wrap  justify-content-start">
             <?php 
         foreach ($giochi as $value):
-            // foreach($Categoria as $val):
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="./img/cane.png" class="card-img-top" alt="...">
+                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
                         </span><?php echo $value->getnome() ?></p>
@@ -123,7 +119,6 @@ require_once __DIR__ . "/models/db/db.php";
             </div>
             <?php
     endforeach;
-// endforeach;
     ?>
         </div>
 
@@ -132,10 +127,9 @@ require_once __DIR__ . "/models/db/db.php";
         <div class=" d-flex flex-wrap  justify-content-start">
             <?php 
         foreach ($varie as $value):
-            // foreach($Categoria as $val):
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="./img/gatto.png" class="card-img-top" alt="...">
+                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
                         </span><?php echo $value->getnome() ?></p>
@@ -155,7 +149,6 @@ require_once __DIR__ . "/models/db/db.php";
             </div>
             <?php
     endforeach;
-// endforeach;
     ?>
         </div>
 

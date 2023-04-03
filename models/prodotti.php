@@ -22,6 +22,10 @@ class Prodotti{
         return $this->nome;
     }
 
+    public function getcategoria() {
+      return $this->categoria;
+  }
+
         public function getprezzo() {
             return $this->prezzo;
           }

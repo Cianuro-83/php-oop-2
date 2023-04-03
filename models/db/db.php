@@ -30,7 +30,7 @@ $cibo[]=$cibo2;
 $cibo[]=$cibo3;
 $cibo[]=$cibo4;
 $cibo[]=$cibo5;
-// var_dump($cibo);
+var_dump($cibo);
 
 // CREO LE ISTANZE DI CUCCE (STRING-INTER-STRING-INTER------INTER-INTER-INTER------$ANIMALE)
 $cucce1= new Cucce("Amazon Basic", 24, "Lettino circolare per gatti in tela", 51, 50, 50, 155, $gatto);
