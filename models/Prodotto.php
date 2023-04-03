@@ -1,8 +1,11 @@
 <?php 
 require_once __DIR__ . "/Categoria.php";
+require_once __DIR__ . "/Controllo.php";
 
 
 class Prodotti{
+  use Controllo;
+  
     protected string $nome;
     protected float $prezzo;
     protected string $descrizione;
@@ -17,7 +20,14 @@ class Prodotti{
         $this->pezzi_disponibili=$_pezzi_disponibili;
         $this->categoria=$_categoria;
     }
-      
+  
+        
+    public function set_nome($new_value) {
+      $this->controlla_testo($new_value);
+      $this->nome=$new_value;
+
+  }
+
     public function get_nome() {
         return $this->nome;
     }
