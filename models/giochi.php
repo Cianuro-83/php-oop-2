@@ -22,28 +22,28 @@ class Giochi extends Prodotti{
 
 
     //   materiale
-    public function setmateriale($newValue) {
+    public function set_materiale($newValue) {
         $this->materiale=$newValue;
       }
     
-    public function getmateriale() {
+    public function get_materiale() {
         return $this->materiale;
       }
 
     // valutazione
-    public function setvalutazione($newValue) {
+    public function set_valutazione($newValue) {
         $this->valutazione=$newValue;
       }
     
-    public function getvalutazione() {
+    public function get_valutazione() {
         return $this->valutazione;
       }
     // uso
-    public function setuso($newValue) {
+    public function set_uso($newValue) {
         $this->uso=$newValue;
       }
     
-    public function getuso() {
+    public function get_uso() {
         return $this->uso;
       }
 

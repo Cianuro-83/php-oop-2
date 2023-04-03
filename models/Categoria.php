@@ -9,11 +9,11 @@ Class Categoria {
             $this->img="./img/gatto.png";
         }
     }
-      public function getanimale() {
+      public function get_animale() {
         return $this->animale;
       }
 
-      public function getimg() {
+      public function get_img() {
         return $this->img;
       }
     // FINE CATEGORIA

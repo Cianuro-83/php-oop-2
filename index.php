@@ -30,28 +30,28 @@ require_once __DIR__ . "/models/db/db.php";
         <div class=" d-flex flex-wrap  justify-content-start">
 
             <?php 
-        foreach ($cibo as $value):
+        foreach ($cibi as $value):
 
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
+                <img src="<?php echo $value->get_categoria()->get_img()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
-                        </span><?php echo $value->getnome() ?></p>
+                        </span><?php echo $value->get_nome() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">prezzo:
-                        </span><?php echo $value->getprezzo() ?><span
-                            class="fw-bolder text-uppercase text-success">€</span>
+                        </span><?php echo $value->get_prezzo() ?><span class="fw-bolder text-uppercase text-success">
+                            €</span>
                     </p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">descrizione:
-                        </span><?php echo $value->getdescrizione() ?></p>
+                        </span><?php echo $value->get_descrizione() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">pezzi disponibili:
-                        </span><?php echo $value->getpezzi_disponibili() ?></p>
+                        </span><?php echo $value->get_pezzi_disponibili() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">ingredienti:
-                        </span><?php echo $value->getingredienti() ?></p>
+                        </span><?php echo $value->get_ingredienti() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">indicazioni:
-                        </span><?php echo $value->getindicazioni() ?></p>
+                        </span><?php echo $value->get_indicazioni() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">provenienza:
-                        </span><?php echo $value->getprovenienza() ?></p>
+                        </span><?php echo $value->get_provenienza() ?></p>
                 </div>
             </div>
             <?php
@@ -65,24 +65,27 @@ require_once __DIR__ . "/models/db/db.php";
         foreach ($cucce as $value):
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
+                <img src="<?php echo $value->get_categoria()->get_img()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
-                        </span><?php echo $value->getnome() ?></p>
+                        </span><?php echo $value->get_nome() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">prezzo:
-                        </span><?php echo $value->getprezzo() ?><span
-                            class="fw-bolder text-uppercase text-success">€</span>
+                        </span><?php echo $value->get_prezzo() ?><span class="fw-bolder text-uppercase text-success">
+                            €</span>
                     </p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">descrizione:
-                        </span><?php echo $value->getdescrizione() ?></p>
+                        </span><?php echo $value->get_descrizione() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">pezzi disponibili:
-                        </span><?php echo $value->getpezzi_disponibili() ?></p>
+                        </span><?php echo $value->get_pezzi_disponibili() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">larghezza:
-                        </span><?php echo $value->getlarghezza() ?></p>
+                        </span><?php echo $value->get_larghezza() ?><span class="fw-bolder text-uppercase text-success">
+                            cm</span></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">profondita:
-                        </span><?php echo $value->getprofondita() ?></p>
+                        </span><?php echo $value->get_profondita() ?><span
+                            class="fw-bolder text-uppercase text-success"> cm</span></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">altezza:
-                        </span><?php echo $value->getaltezza() ?></p>
+                        </span><?php echo $value->get_altezza() ?><span class="fw-bolder text-uppercase text-success">
+                            cm</span></p>
                 </div>
             </div>
             <?php
@@ -97,24 +100,24 @@ require_once __DIR__ . "/models/db/db.php";
         foreach ($giochi as $value):
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
+                <img src="<?php echo $value->get_categoria()->get_img()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
-                        </span><?php echo $value->getnome() ?></p>
+                        </span><?php echo $value->get_nome() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">prezzo:
-                        </span><?php echo $value->getprezzo() ?><span
-                            class="fw-bolder text-uppercase text-success">€</span>
+                        </span><?php echo $value->get_prezzo() ?><span class="fw-bolder text-uppercase text-success">
+                            €</span>
                     </p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">descrizione:
-                        </span><?php echo $value->getdescrizione() ?></p>
+                        </span><?php echo $value->get_descrizione() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">pezzi disponibili:
-                        </span><?php echo $value->getpezzi_disponibili() ?></p>
+                        </span><?php echo $value->get_pezzi_disponibili() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">valutazione:
-                        </span><?php echo $value->getvalutazione() ?></p>
+                        </span><?php echo $value->get_valutazione() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">uso:
-                        </span><?php echo $value->getuso() ?></p>
+                        </span><?php echo $value->get_uso() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">materiale:
-                        </span><?php echo $value->getmateriale() ?></p>
+                        </span><?php echo $value->get_materiale() ?></p>
                 </div>
             </div>
             <?php
@@ -126,25 +129,25 @@ require_once __DIR__ . "/models/db/db.php";
         <h3 class="text-uppercase py-4 text-warning mx-5">varie:</h3>
         <div class=" d-flex flex-wrap  justify-content-start">
             <?php 
-        foreach ($varie as $value):
+        foreach ($lista_varie as $value):
         ?>
             <div class="card mx-1 text-black mb-2" style="width: 22rem;">
-                <img src="<?php echo $value->getcategoria()->getimg()?>" class="card-img-top" alt="...">
+                <img src="<?php echo $value->get_categoria()->get_img()?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">nome:
-                        </span><?php echo $value->getnome() ?></p>
+                        </span><?php echo $value->get_nome() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">prezzo:
-                        </span><?php echo $value->getprezzo() ?><span
-                            class="fw-bolder text-uppercase text-success">€</span>
+                        </span><?php echo $value->get_prezzo() ?><span class="fw-bolder text-uppercase text-success">
+                            €</span>
                     </p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">descrizione:
-                        </span><?php echo $value->getdescrizione() ?></p>
+                        </span><?php echo $value->get_descrizione() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">pezzi disponibili:
-                        </span><?php echo $value->getpezzi_disponibili() ?></p>
+                        </span><?php echo $value->get_pezzi_disponibili() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">valutazione:
-                        </span><?php echo $value->getvalutazione() ?></p>
+                        </span><?php echo $value->get_valutazione() ?></p>
                     <p class="card-text"><span class="fw-bolder text-uppercase text-success">uso:
-                        </span><?php echo $value->getuso() ?></p>
+                        </span><?php echo $value->get_uso() ?></p>
                 </div>
             </div>
             <?php

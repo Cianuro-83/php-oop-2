@@ -19,19 +19,19 @@ class Varie extends Prodotti{
 //  **************************   // 
 
     // valutazione
-    public function setvalutazione($newValue) {
+    public function set_valutazione($newValue) {
         $this->valutazione=$newValue;
       }
     
-    public function getvalutazione() {
+    public function get_valutazione() {
         return $this->valutazione;
       }
     // uso
-    public function setuso($newValue) {
+    public function set_uso($newValue) {
         $this->uso=$newValue;
       }
     
-    public function getuso() {
+    public function get_uso() {
         return $this->uso;
       }
 

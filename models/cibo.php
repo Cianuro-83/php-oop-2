@@ -21,28 +21,28 @@ class Cibo extends Prodotti{
 
 
     //   provenienza
-    public function setprovenienza($newValue) {
+    public function set_provenienza($newValue) {
         $this->provenienza=$newValue;
       }
     
-    public function getprovenienza() {
+    public function get_provenienza() {
         return $this->provenienza;
       }
 
     // ingredienti
-    public function setingredienti($newValue) {
+    public function set_ingredienti($newValue) {
         $this->ingredienti=$newValue;
       }
     
-    public function getingredienti() {
+    public function get_ingredienti() {
         return $this->ingredienti;
       }
     // indicazioni
-    public function setindicazioni($newValue) {
+    public function set_indicazioni($newValue) {
         $this->indicazioni=$newValue;
       }
     
-    public function getindicazioni() {
+    public function get_indicazioni() {
         return $this->indicazioni;
       }
 

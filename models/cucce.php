@@ -22,28 +22,28 @@ class Cucce extends Prodotti{
 
 
     //   altezza
-    public function setaltezza($newValue) {
+    public function set_altezza($newValue) {
         $this->altezza=$newValue;
       }
     
-    public function getaltezza() {
+    public function get_altezza() {
         return $this->altezza;
       }
 
     // larghezza
-    public function setlarghezza($newValue) {
+    public function set_larghezza($newValue) {
         $this->larghezza=$newValue;
       }
     
-    public function getlarghezza() {
+    public function get_larghezza() {
         return $this->larghezza;
       }
     // profondita
-    public function setprofondita($newValue) {
+    public function set_profondita($newValue) {
         $this->profondita=$newValue;
       }
     
-    public function getprofondita() {
+    public function get_profondita() {
         return $this->profondita;
       }
 

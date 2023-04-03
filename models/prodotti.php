@@ -4,7 +4,7 @@ require_once __DIR__ . "/Categoria.php";
 
 class Prodotti{
     protected string $nome;
-    protected int $prezzo;
+    protected float $prezzo;
     protected string $descrizione;
     protected int $pezzi_disponibili;
     protected Categoria $categoria;
@@ -18,23 +18,23 @@ class Prodotti{
         $this->categoria=$_categoria;
     }
       
-    public function getnome() {
+    public function get_nome() {
         return $this->nome;
     }
 
-    public function getcategoria() {
+    public function get_categoria() {
       return $this->categoria;
   }
 
-        public function getprezzo() {
+        public function get_prezzo() {
             return $this->prezzo;
           }
 
-          public function getdescrizione() {
+          public function get_descrizione() {
             return $this->descrizione;
           }
 
-          public function getpezzi_disponibili() {
+          public function get_pezzi_disponibili() {
             return $this->pezzi_disponibili;
           }
     
